@@ -6,11 +6,12 @@ import SocialPill from "../components/Socialpill.astro";
 import LinkedInIcon from '../components/icons/LinkedIn.astro';
 import GithubIcon from '../components/icons/Github.astro';
 import GmailIcon from '../components/icons/Gmail.astro';
+import SectionContainer from '../components/SectionContainer.astro';
 ---
 
 <Layout title="Portafolio de Santiago - Desarrollador y Programador">
-  <main>
-	<section class="w-full mx-auto lg:w-[740px] py-44">
+  <main class="px-4">
+	<SectionContainer id="top" class="py-44 pb-24">
 <div class="relative inline-block">  
   <img 
     class="rounded-full w-23 h-23 mb-4" 
@@ -20,7 +21,8 @@ import GmailIcon from '../components/icons/Gmail.astro';
  <span class="absolute bottom-4 right-2.5 w-5 h-5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
 </div>
 
-	  <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+	  <h1 class="text-white text-3xl md:text-4xl lg:text-5xl 
+	            font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
 				Hey, soy Santiago Mafla <a
 				href="https://www.linkedin.com/in/santiagomafla" 
 				target="_blank" 
@@ -30,27 +32,32 @@ import GmailIcon from '../components/icons/Gmail.astro';
 				  <Badge>Disponible para trabajar</Badge>
 	  </a>
 	  </h1>
-	  <h2 class="text-2xl text-wrap">
+	  <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
 		<span>+2 años estudiando desarrollo de software.</span>
 		<span class="text-fuchsia-300">Desarrollador Backend y analisis de datos.</span>
 		<span class="text-pink-500">De Bogota Colombia</span>
 		<span class="opacity-70">Especializado en crear aplicaciones unicas.</span>
 	  </h2>
 
-		<nav class="flex gap-x-5 mt-8">
+		<nav class="flex gap-4 mt-8 flex-wrap">
 			<SocialPill href="https://www.linkedin.com/in/santiagomafla">
-				<LinkedInIcon class="w-6 h-6" />
+				<LinkedInIcon class="size-7 md:size-4" />
 				LinkedIn
 			</SocialPill>
 			<SocialPill href="https://github.com/MAFLIXD">
-				<GithubIcon class="w-6 h-6" />
+				<GithubIcon class="size-7 md:size-4" />
 				Github
 			</SocialPill>
-			<SocialPill href="santiago.mafla8@gmail.com">
-				<GmailIcon class="w-6 h-6" />
+			<SocialPill href="mailto:santiago.mafla8@gmail.com">
+				<GmailIcon class="size-7 md:size-4" />
 				santiago.mafla8@gmail.com
 			</SocialPill>
 		</nav>
-	</section>	
+
+	</SectionContainer>
+	
+	<SectionContainer id="proyectos">
+		<h2 class="text-4xl">Proyectos</h2>
+	</SectionContainer>
   </main>
 </Layout>
