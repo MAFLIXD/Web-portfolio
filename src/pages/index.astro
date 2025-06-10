@@ -1,14 +1,14 @@
 ---
 import Badge from '../components/Badge.astro';
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import Styles from '../styles/global.css';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import SocialPill from "../components/Socialpill.astro";
+import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import GithubIcon from '../components/icons/Github.astro';
+import GmailIcon from '../components/icons/Gmail.astro';
 ---
 
-<Layout title="Portafolio">
+<Layout title="Portafolio de Santiago - Desarrollador y Programador">
   <main>
 	<section class="w-full mx-auto lg:w-[740px] py-44">
 <div class="relative inline-block">  
@@ -37,7 +37,20 @@ import Styles from '../styles/global.css';
 		<span class="opacity-70">Especializado en crear aplicaciones unicas.</span>
 	  </h2>
 
-	  <ul></ul>
+		<nav class="flex gap-x-5 mt-8">
+			<SocialPill href="https://www.linkedin.com/in/santiagomafla">
+				<LinkedInIcon class="w-6 h-6" />
+				LinkedIn
+			</SocialPill>
+			<SocialPill href="https://github.com/MAFLIXD">
+				<GithubIcon class="w-6 h-6" />
+				Github
+			</SocialPill>
+			<SocialPill href="santiago.mafla8@gmail.com">
+				<GmailIcon class="w-6 h-6" />
+				santiago.mafla8@gmail.com
+			</SocialPill>
+		</nav>
 	</section>	
   </main>
 </Layout>
