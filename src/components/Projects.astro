@@ -11,7 +11,6 @@ const TAGS = {
     class: "bg-black text-white",
     icon: Java, 
   },
-
   SPRING: {
     name: "Spring Boot",
     class: "bg-green-800 text-white",
@@ -24,7 +23,7 @@ const PROJECTS = [
     description:"Programa para el registro y manejo de la biblioteca por consola, con las funciones de agregar, actualizar, eliminar, buscar y ordenar libros.",
     link: "https://github.com/MAFLIXD/Biblioteca",
     github: "https://github.com/MAFLIXD/Biblioteca",
-    image: "https://avatars.githubusercontent.com/u/116380301?v=4",
+    image: "",
     tags: [TAGS.JAVA, TAGS.SPRING],
   },
 
@@ -33,7 +32,7 @@ const PROJECTS = [
     description:"Programa para consultar calificaciones, filtrar y buscar peliculas mediante una Api",
     link: "https://github.com/MAFLIXD/Java-Api-movies",
     github: "https://github.com/MAFLIXD/Java-Api-movies",
-    image: "/public/projects/svgl2.webp",
+    image: "",
     tags: [TAGS.JAVA, TAGS.SPRING],
   },
 ]  
@@ -44,10 +43,7 @@ const PROJECTS = [
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Captura del proyecto" 
-      class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" 
-      loading="lazy" 
-      src={image} /> 
+      <img alt="Captura del proyecto" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} /> 
     </div>
   </div> 
 
@@ -85,7 +81,7 @@ const PROJECTS = [
             </LinkButton>
           )}
         </footer>
-  </div>
+    </div>
   </div>
 </article>
     ))
