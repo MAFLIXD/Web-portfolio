@@ -7,11 +7,13 @@ import LinkedInIcon from '../components/icons/LinkedIn.astro';
 import GithubIcon from '../components/icons/Github.astro';
 import GmailIcon from '../components/icons/Gmail.astro';
 import SectionContainer from '../components/SectionContainer.astro';
+import CodeIcon from '../components/icons/Code.astro';
+import Projects from '../components/Projects.astro';
 ---
 
 <Layout title="Portafolio de Santiago - Desarrollador y Programador">
   <main class="px-4">
-	<SectionContainer id="top" class="py-44 pb-24">
+	<SectionContainer id="top" class="py-44 pb-32">
 <div class="relative inline-block">  
   <img 
     class="rounded-full w-23 h-23 mb-4" 
@@ -41,15 +43,15 @@ import SectionContainer from '../components/SectionContainer.astro';
 
 		<nav class="flex gap-4 mt-8 flex-wrap">
 			<SocialPill href="https://www.linkedin.com/in/santiagomafla">
-				<LinkedInIcon class="size-7 md:size-4" />
+				<LinkedInIcon class="size-6 md:size-4" />
 				LinkedIn
 			</SocialPill>
 			<SocialPill href="https://github.com/MAFLIXD">
-				<GithubIcon class="size-7 md:size-4" />
+				<GithubIcon class="size-6 md:size-4" />
 				Github
 			</SocialPill>
 			<SocialPill href="mailto:santiago.mafla8@gmail.com">
-				<GmailIcon class="size-7 md:size-4" />
+				<GmailIcon class="size-6 md:size-4" />
 				santiago.mafla8@gmail.com
 			</SocialPill>
 		</nav>
@@ -57,7 +59,10 @@ import SectionContainer from '../components/SectionContainer.astro';
 	</SectionContainer>
 	
 	<SectionContainer id="proyectos">
-		<h2 class="text-4xl">Proyectos</h2>
+		<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+			<CodeIcon class="size-7" />
+			Proyectos</h2>
+			<Projects />
 	</SectionContainer>
   </main>
 </Layout>
