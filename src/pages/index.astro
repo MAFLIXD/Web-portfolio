@@ -1,68 +1,163 @@
 ---
-import Badge from '../components/Badge.astro';
-import Layout from '../layouts/Layout.astro';
-import Styles from '../styles/global.css';
+import Badge from "../components/Badge.astro";
+import Layout from "../layouts/Layout.astro";
+import Styles from "../styles/global.css";
 import SocialPill from "../components/Socialpill.astro";
-import LinkedInIcon from '../components/icons/LinkedIn.astro';
-import GithubIcon from '../components/icons/Github.astro';
-import GmailIcon from '../components/icons/Gmail.astro';
-import SectionContainer from '../components/SectionContainer.astro';
-import CodeIcon from '../components/icons/Code.astro';
-import Projects from '../components/Projects.astro';
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import GithubIcon from "../components/icons/Github.astro";
+import GmailIcon from "../components/icons/Gmail.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import Projects from "../components/Projects.astro";
+import UserIcon from "../components/icons/UserIcon.astro";
+import Cursos from "../components/icons/Cursos.astro";
 ---
 
 <Layout title="Portafolio de Santiago - Desarrollador y Programador">
   <main class="px-4">
-	<SectionContainer id="top" class="py-44 pb-32">
-<div class="relative inline-block">  
-  <img 
-    class="rounded-full w-23 h-23 mb-4" 
-    src="https://avatars.githubusercontent.com/u/116380301?v=4" 
-    alt="santiago photo"
-  />
- <span class="absolute bottom-4 right-2.5 w-5 h-5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
-</div>
+    <SectionContainer id="top" class="py-44 pb-32">
+      <div class="relative inline-block">
+        <img
+          class="rounded-full w-23 h-23 mb-4"
+          src="https://avatars.githubusercontent.com/u/116380301?v=4"
+          alt="santiago photo"
+        />
+        <span
+          class="absolute bottom-4 right-2.5 w-5 h-5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"
+        ></span>
+      </div>
 
-	  <h1 class="text-white text-3xl md:text-4xl lg:text-5xl 
-	            font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
-				Hey, soy Santiago Mafla <a
-				href="https://www.linkedin.com/in/santiagomafla" 
-				target="_blank" 
-				rel="noopener"
-				class="flex justify-center items-center"
-				>
-				  <Badge>Disponible para trabajar</Badge>
-	  </a>
-	  </h1>
-	  <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
-		<span>+2 años estudiando desarrollo de software.</span>
-		<span class="text-fuchsia-300">Desarrollador Backend y analisis de datos.</span>
-		<span class="text-pink-500">De Bogota Colombia</span>
-		<span class="opacity-70">Especializado en crear aplicaciones unicas.</span>
-	  </h2>
+      <h1
+        class="text-white text-3xl md:text-4xl lg:text-5xl
+                font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
+        Hey, soy Santiago Mafla <a
+          href="https://www.linkedin.com/in/santiagomafla"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+        <span>+2 años estudiando desarrollo de software.</span>
+        <span class="text-fuchsia-300"
+          >Desarrollador Backend y analisis de datos.</span
+        >
+        <span class="text-pink-500">De Bogota Colombia</span>
+        <span class="opacity-70"
+          >Especializado en crear aplicaciones unicas.</span
+        >
+      </h2>
 
-		<nav class="flex gap-4 mt-8 flex-wrap">
-			<SocialPill href="https://www.linkedin.com/in/santiagomafla">
-				<LinkedInIcon class="size-6 md:size-4" />
-				LinkedIn
-			</SocialPill>
-			<SocialPill href="https://github.com/MAFLIXD">
-				<GithubIcon class="size-6 md:size-4" />
-				Github
-			</SocialPill>
-			<SocialPill href="mailto:santiago.mafla8@gmail.com">
-				<GmailIcon class="size-6 md:size-4" />
-				santiago.mafla8@gmail.com
-			</SocialPill>
-		</nav>
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href="https://www.linkedin.com/in/santiagomafla">
+          <LinkedInIcon class="size-6 md:size-4" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/MAFLIXD">
+          <GithubIcon class="size-6 md:size-4" />
+          Github
+        </SocialPill>
+        <SocialPill href="mailto:santiago.mafla8@gmail.com">
+          <GmailIcon class="size-6 md:size-4" />
+          santiago.mafla8@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
 
-	</SectionContainer>
-	
-	<SectionContainer id="proyectos">
-		<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-			<CodeIcon class="size-7" />
-			Proyectos</h2>
-			<Projects />
-	</SectionContainer>
+    <SectionContainer id="sobre-mi">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <UserIcon class="size-7" />
+        Sobre mi
+      </h2>
+      <p class="text-lg text-gray-300 mb-4">
+        Estudiante de Tecnico en Desarrollo de software, con solidos
+        conocimientros en paradigmas de programacion, estructuras de datos y
+        algoritmos.
+      </p>
+
+      <p class="mb-1">
+        Me especializo en el desarrollo backend con java y análisis de datos con
+        python, Mi enfoque está en la calidad del código y en la eficiencia.
+      </p>
+
+      <p>
+        Siempre estoy aprendiendo nuevas tecnologías y buscando formas de
+        mejorar mis habilidades.
+      </p>
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <CodeIcon class="size-7" />
+        Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="certificados">
+      <h1 class="text-3xl font-semibold mb-15 flex gap-x-3 items-center">
+        <Cursos class="size-7" />
+        Certificados
+      </h1>
+
+      <div class="columns-3 ..."> <!-- Para mas insignias solo aumentar el numero de columnas -->
+        <!-- Cubo 3D para Foundations -->
+        <div class="size-50 relative mx-auto mb-4 perspective-[1000px]">
+          <div
+            class="relative w-full h-full transition-transform duration-500"
+            style="transform-style: preserve-3d; transform: rotateY(0deg);"
+            onmouseenter="this.style.transform='rotateY(90deg)'"
+            onmouseleave="this.style.transform='rotateY(0deg)'"
+          >
+            <img class="w-full max-w-[250px] absolute inset-0" src="/public/projects/Foundations.png" />
+            <div class="translate-z-12 rotate-x-0 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+            <div class="-translate-z-12 rotate-y-180 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+            <div class="translate-x-12 rotate-y-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+            <div class="-translate-x-12 -rotate-y-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+            <div class="-translate-y-12 rotate-x-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+            <div class="translate-y-12 -rotate-x-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+          </div>
+        </div>
+
+		<!-- Cubo 3D para la primera imagen -->
+        <div class="size-50 relative mx-auto mb-4 perspective-[1000px]">
+          <div
+            class="relative w-full h-full transition-transform duration-500"
+            style="transform-style: preserve-3d; transform: rotateY(0deg);"
+            onmouseenter="this.style.transform='rotateY(90deg)'"
+            onmouseleave="this.style.transform='rotateY(0deg)'"
+          >
+            <img class="w-full max-w-[400px] absolute inset-0" src="/public/projects/1-removebg-preview (1).png" />
+            <div class="translate-z-12 rotate-x-0 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+            <div class="-translate-z-12 rotate-y-180 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+            <div class="translate-x-12 rotate-y-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+            <div class="-translate-x-12 -rotate-y-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+            <div class="-translate-y-12 rotate-x-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+            <div class="translate-y-12 -rotate-x-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+          </div>
+        </div>
+
+        <!-- Cubo 3D para Fundamentals -->
+        <div class="size-50 relative mx-auto mb-4 perspective-[1000px]">
+          <div
+            class="relative w-full h-full transition-transform duration-500"
+            style="transform-style: preserve-3d; transform: rotateY(0deg);"
+            onmouseenter="this.style.transform='rotateY(90deg)'"
+            onmouseleave="this.style.transform='rotateY(0deg)'"
+          >
+            <img class="w-full max-w-[250px] absolute inset-0" src="/public/projects/Fundamentals.png" />
+            <div class="translate-z-12 rotate-x-0 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+            <div class="-translate-z-12 rotate-y-180 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+            <div class="translate-x-12 rotate-y-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+            <div class="-translate-x-12 -rotate-y-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+            <div class="-translate-y-12 rotate-x-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+            <div class="translate-y-12 -rotate-x-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
+          </div>
+        </div>
+      </div>
+    </SectionContainer>
   </main>
 </Layout>
