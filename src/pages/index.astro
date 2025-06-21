@@ -136,66 +136,64 @@ import Courses from "../components/icons/Courses.astro";
     </SectionContainer>
 
     <SectionContainer id="certificaciones">
-      <h1 class="text-3xl font-semibold mb-15 flex gap-x-3 items-center">
-        <Cursos class="size-7" />
-        Certificaciones
-      </h1>
-
-      <div class="columns-3 ..."> <!-- Para mas insignias solo aumentar el numero de columnas -->
-        <!-- Cubo 3D para Foundations -->
-        <div class="size-50 relative mx-auto mb-4 perspective-[1000px]">
-          <div
-            class="relative w-full h-full transition-transform duration-500"
-            style="transform-style: preserve-3d; transform: rotateY(0deg);"
-            onmouseenter="this.style.transform='rotateY(90deg)'"
-            onmouseleave="this.style.transform='rotateY(0deg)'"
-          >
-            <img class="w-full max-w-[160px] absolute inset-0" src="/projects/Foundations.png" />
-            <div class="translate-z-12 rotate-x-0 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-            <div class="-translate-z-12 rotate-y-180 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-            <div class="translate-x-12 rotate-y-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-            <div class="-translate-x-12 -rotate-y-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-            <div class="-translate-y-12 rotate-x-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-            <div class="translate-y-12 -rotate-x-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-          </div>
-        </div>
-
-		<!-- Cubo 3D para la microcredencial AWS -->
-        <div class="size-50 relative mx-auto mb-4 perspective-[1000px]">
-          <div
-            class="relative w-full h-full transition-transform duration-500"
-            style="transform-style: preserve-3d; transform: rotateY(0deg);"
-            onmouseenter="this.style.transform='rotateY(90deg)'"
-            onmouseleave="this.style.transform='rotateY(0deg)'"
-          >
-            <img class="w-full max-w-[190px] absolute inset-0" src="/projects/Aws.png" />
-            <div class="translate-z-12 rotate-x-0 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-            <div class="-translate-z-12 rotate-y-180 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-            <div class="translate-x-12 rotate-y-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-            <div class="-translate-x-12 -rotate-y-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-            <div class="-translate-y-12 rotate-x-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-            <div class="translate-y-12 -rotate-x-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-          </div>
-        </div>
-
-        <!-- Cubo 3D para Fundamentals -->
-        <div class="size-50 relative mx-auto mb-4 perspective-[1000px]">
-          <div
-            class="relative w-full h-full transition-transform duration-500"
-            style="transform-style: preserve-3d; transform: rotateY(0deg);"
-            onmouseenter="this.style.transform='rotateY(90deg)'"
-            onmouseleave="this.style.transform='rotateY(0deg)'"
-          >
-            <img class="w-full max-w-[160px] absolute inset-0" src="/projects/Fundamentals.png" />
-            <div class="translate-z-12 rotate-x-0 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-            <div class="-translate-z-12 rotate-y-180 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-            <div class="translate-x-12 rotate-y-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-            <div class="-translate-x-12 -rotate-y-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-            <div class="-translate-y-12 rotate-x-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-            <div class="translate-y-12 -rotate-x-90 backface-hidden absolute inset-0 flex items-center justify-center"></div>
-          </div>
+  <h1 class="text-3xl font-semibold mb-15 flex gap-x-3 items-center">
+    <Cursos class="size-7" />
+    Certificaciones
+  </h1>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- Foundations -->
+    <div class="flex justify-center">
+      <div class="size-36 relative perspective-[1000px]">
+        <div
+          class="relative w-full h-full transition-transform duration-500"
+          style="transform-style: preserve-3d; transform: rotateY(0deg);"
+          onmouseenter="this.style.transform='rotateY(200deg)'"
+          onmouseleave="this.style.transform='rotateY(0deg)'"
+        >
+          <img class="w-full max-w-[200px] absolute inset-0" src="/projects/Foundations.png" />
         </div>
       </div>
+    </div>
+    <!-- AWS -->
+    <div class="flex justify-center">
+      <div class="size-45 relative perspective-[1000px]">
+        <div
+          class="relative w-full h-full transition-transform duration-500"
+          style="transform-style: preserve-3d; transform: rotateY(0deg);"
+          onmouseenter="this.style.transform='rotateY(200deg)'"
+          onmouseleave="this.style.transform='rotateY(0deg)'"
+        >
+          <img class="w-full max-w-[200px] absolute inset-0" src="/projects/Aws.png" />
+        </div>
+      </div>
+    </div>
+    <!-- Fundamentals -->
+    <div class="flex justify-center">
+      <div class="size-36 relative perspective-[1000px]">
+        <div
+          class="relative w-full h-full transition-transform duration-500"
+          style="transform-style: preserve-3d; transform: rotateY(0deg);"
+          onmouseenter="this.style.transform='rotateY(200deg)'"
+          onmouseleave="this.style.transform='rotateY(0deg)'"
+        >
+          <img class="w-full max-w-[200px] absolute inset-0" src="/projects/Fundamentals.png" />
+        </div>
+      </div>
+    </div>
+    <!-- Alura -->
+    <div class="flex justify-center">
+      <div class="size-34 relative perspective-[1000px]">
+        <div
+          class="relative w-full h-full transition-transform duration-500"
+          style="transform-style: preserve-3d; transform: rotateY(0deg);"
+          onmouseenter="this.style.transform='rotateY(200deg)'"
+          onmouseleave="this.style.transform='rotateY(0deg)'"
+        >
+          <img class="w-full max-w-[200px] absolute inset-0" src="/projects/alura.png" />
+        </div>
+      </div>
+    </div>
+  </div>
     </SectionContainer>
 
     <SectionContainer id="contacto">
